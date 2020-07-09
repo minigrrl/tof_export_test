@@ -1,0 +1,15 @@
+{
+	"list": [
+		{
+			"version": "current",
+			"path": "http://build.fhir.org/ig/HL7/bf",
+			"desc": "",
+			"fhirversion": "4.0.1",
+			"status": "ci-build",
+			"current": true
+		}
+	],
+	"package-id": "hl7.fhir.us.vrdr",
+	"title": "Vital Records Mortality and Morbidity Reporting",
+	"canonical": "http://hl7.org/fhir/us/vrdr"
+}

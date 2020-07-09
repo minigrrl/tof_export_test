@@ -1,0 +1,68 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "VRDR-Death-Pronouncement-Performer",
+	"meta": {
+		"versionId": "6",
+		"lastUpdated": "2020-07-02T04:57:26.407+00:00",
+		"source": "#2eOeIeYPFKxW7wW7",
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Death-Pronouncement-Performer",
+	"version": "1.0",
+	"name": "DeathPronouncementPerformer",
+	"title": "VRDR Death Pronouncement Performer",
+	"status": "draft",
+	"experimental": false,
+	"date": "2020-05-09",
+	"publisher": "Health Level Seven",
+	"contact": [
+		{
+			"name": "AbdulMalik Shakir",
+			"telecom": [
+				{
+					"system": "phone",
+					"value": "6266444491",
+					"use": "work"
+				},
+				{
+					"system": "email",
+					"value": "abdulmalik.shakir@hi3solutions.com",
+					"use": "work"
+				}
+			]
+		}
+	],
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "Practitioner",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Practitioner",
+				"path": "Practitioner"
+			},
+			{
+				"id": "Practitioner.identifier",
+				"path": "Practitioner.identifier",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Practitioner.name",
+				"path": "Practitioner.name",
+				"short": "name",
+				"min": 1,
+				"max": "1"
+			}
+		]
+	}
+}

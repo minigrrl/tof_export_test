@@ -1,0 +1,38 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "Census-Tract",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2020-06-26T04:11:33.149+00:00",
+		"source": "#U9p7HEPGZS6ClIrH"
+	},
+	"url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/Census-Tract",
+	"name": "CensusTract",
+	"status": "active",
+	"kind": "resource",
+	"abstract": false,
+	"type": "Extension",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Extension",
+				"path": "Extension"
+			},
+			{
+				"id": "Extension.value[x]",
+				"path": "Extension.value[x]",
+				"min": 1,
+				"max": "1",
+				"type": [
+					{
+						"code": "CodeableConcept"
+					}
+				]
+			}
+		]
+	},
+	"fhirVersion": "4.0.1",
+	"title": "CensusTract"
+}

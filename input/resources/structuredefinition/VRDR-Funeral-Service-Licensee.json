@@ -1,0 +1,50 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "VRDR-Funeral-Service-Licensee",
+	"meta": {
+		"versionId": "3",
+		"lastUpdated": "2020-07-02T05:39:31.378+00:00",
+		"source": "#8smgcSiOhQRaelp4",
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR-Funeral-Service-Licensee",
+	"version": "1.0",
+	"name": "FuneralServiceLicensee",
+	"title": "VRDR Funeral Service Licensee",
+	"status": "draft",
+	"experimental": false,
+	"date": "2020-05-10",
+	"publisher": "Health Level Seven",
+	"contact": [
+		{
+			"name": "AbdulMalik Shakir",
+			"telecom": [
+				{
+					"system": "email",
+					"value": "abdulmalik.shakir@hi3solutions.com",
+					"use": "work"
+				}
+			]
+		}
+	],
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "PractitionerRole",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "PractitionerRole",
+				"path": "PractitionerRole"
+			}
+		]
+	}
+}

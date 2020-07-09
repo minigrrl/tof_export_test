@@ -1,0 +1,36 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "VRDR-Decedent-Mother",
+	"meta": {
+		"versionId": "12",
+		"lastUpdated": "2020-07-02T05:04:40.157+00:00",
+		"source": "#hIPiyYLgD1ko4Cg6",
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"url": "http://hl7.org/fhir/caph/vrdr/StructureDefinition/VRDR-Decedent-Mother",
+	"name": "VRDR_DecedentMother",
+	"title": "Decedent Mother",
+	"status": "draft",
+	"experimental": false,
+	"publisher": "CAPH",
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "RelatedPerson",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "RelatedPerson",
+				"path": "RelatedPerson"
+			}
+		]
+	}
+}

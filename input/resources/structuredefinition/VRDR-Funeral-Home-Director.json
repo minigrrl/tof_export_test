@@ -1,0 +1,84 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "VRDR-Funeral-Home-Director",
+	"meta": {
+		"versionId": "11",
+		"lastUpdated": "2020-07-02T05:36:28.836+00:00",
+		"source": "#2L2lHMu6kdp3aERL"
+	},
+	"url": "http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR_FuneralHomeDirector",
+	"version": "1.0",
+	"name": "FuneralHomeDirector",
+	"title": "VRDR Funeral Home Director",
+	"status": "draft",
+	"experimental": false,
+	"date": "2020-05-10",
+	"publisher": "Health Level Seven",
+	"contact": [
+		{
+			"name": "AbdulMalik Shakir",
+			"telecom": [
+				{
+					"system": "email",
+					"value": "abdulmalik.shakir@hi3solutions.com",
+					"use": "work"
+				}
+			]
+		}
+	],
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "PractitionerRole",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "PractitionerRole",
+				"path": "PractitionerRole"
+			},
+			{
+				"id": "PractitionerRole.practitioner",
+				"path": "PractitionerRole.practitioner",
+				"short": "practitioner",
+				"min": 1,
+				"max": "1",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR_Mortician"
+						]
+					}
+				]
+			},
+			{
+				"id": "PractitionerRole.organization",
+				"path": "PractitionerRole.organization",
+				"short": "organization",
+				"min": 1,
+				"max": "1",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/vrdr/StructureDefinition/VRDR_FuneralHome"
+						]
+					}
+				]
+			},
+			{
+				"id": "PractitionerRole.code",
+				"path": "PractitionerRole.code",
+				"min": 1,
+				"max": "1",
+				"binding": {
+					"strength": "required",
+					"description": "PractitionerRole",
+					"valueSet": "http://hl7.org/fhir/ValueSet/practitioner-role"
+				}
+			}
+		]
+	}
+}
